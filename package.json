@@ -1,0 +1,30 @@
+{
+  "name": "classy-gemini",
+  "version": "1.0.0",
+  "description": "This is a Gemini API for Classy",
+  "main": "gserver.js",
+  "scripts": {
+    "prod": "nodemon gserver.js",
+    "dev": "nodemon gserver.js"
+  },
+  "author": "Valeyard",
+  "dependencies": {
+    "@google/genai": "^2.19.0",
+    "axios": "^1.20.0",
+    "express": "^5.2.1",
+    "ioredis": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "nodemon": "^3.1.14",
+    "uuid": "^14.0.2"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": [
+      "**/logs/**"
+    ]
+  },
+  "allowScripts": {
+    "@google/genai": true,
+    "protobufjs": true
+  }
+}
